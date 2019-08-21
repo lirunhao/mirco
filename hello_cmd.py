@@ -2,7 +2,7 @@ from tornado.web import Application, RequestHandler
 from tornado.ioloop import IOLoop
 from tornado.options import define, options, parse_command_line
 
-define('port', default=4300, type=int, help='设置端口')
+define('port', default=8000, type=int, help='设置端口')
 class Indexhandler(RequestHandler):
     def get(self):
         word = self.get_argument('wd')
