@@ -28,7 +28,7 @@ if __name__ == '__main__':
         ('/login', Loginhandler),
         ('/logout', Logouthandler)
     ])
-    'bb'
+
     app.listen(options.port)
 
     IOLoop.current().start()
