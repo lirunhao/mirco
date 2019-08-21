@@ -6,7 +6,7 @@ define('port', default=4300, type=int, help='设置端口')
 class Indexhandler(RequestHandler):
     def get(self):
         word = self.get_argument('wd')
-        self.write('获取表单参数%s' % word)
+        self.write('获取查询参数%s' % word)
     def post(self):
         word = self.get_argument('wd')
         self.write('获取表单参数%s' % word)
